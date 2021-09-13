@@ -1,0 +1,59 @@
+.delivery {
+    &__content {
+        text-align: center;
+        color: #fff;
+        padding-top: 80px;
+    background: $black;
+
+        &-title {
+            font-size: 30px;
+            font-weight: 700;
+            span {
+                font-weight: 400;
+            }
+        }
+        &-suptitle {
+            font-size: 22px;
+            margin-top: 22px;
+            padding-bottom: 70px;
+        }
+    }
+    &__body {
+        background-color: $lightBrown;
+       
+    }
+    &__columns {
+        @include flex(space-between, center)
+    }
+    &__column {
+        @include flex(space-between, start);
+        &-img {
+            margin-top: 80px;
+        }
+        &-body {
+            padding-top: 60px ;
+         
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 25px;
+            span {
+                font-weight: 400;
+            }
+        }
+       
+        &-btn {
+            cursor: pointer;
+
+            padding: 10px 30px;
+            border: none;
+            background-color: $brown;
+            margin-top: 40px;
+        }
+    }
+
+}
+
+
+

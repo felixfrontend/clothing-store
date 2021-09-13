@@ -1,0 +1,82 @@
+.home {
+    min-height: 90vh;
+    background-color: $lightBrown;
+    &__header {
+        @include flex(space-between, center);
+        background-color: $lightBrown;
+        padding-top: 50px;
+        &-menu {
+            padding-left: 0;
+            @include flex(space-between, center);
+            &-item {
+                margin-left: 52px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        &-cart {
+            background-image: url(../img/basket.png);
+            margin-right: 50px;
+            padding-left: 45px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            &-count {
+                background-image: url(../img/notif.svg);
+                background-repeat: no-repeat;
+                background-position: 0 center;
+                display: block;
+                color: #fff;
+                font-size: 12px;
+                font-weight: 700;
+                padding: 10px 24px;
+            }
+        }
+    }
+    &__content {
+        @include flex(space-between, center);
+        padding-top: 110px;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        &-suptitle {
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+        &-title {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 55px;
+        }
+        &-btn {
+            font-family: $mons;
+            cursor: pointer;
+            border: none;
+            width: 240px;
+            padding: 18px 0;
+            color: #fff;
+            background-color: $brown;
+        }
+    }
+    &__sneakers {
+        position: relative;
+        &-price {
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            &-old {
+                font-size: 24px;
+                font-weight: 700;
+            }
+            &-new {
+                color: $red;
+                font-size: 42px;
+                font-weight: 700;
+            }
+        }
+    }
+}

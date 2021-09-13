@@ -1,0 +1,23 @@
+$mons: 'Montserrat',serif;
+$brown: #D7B399;
+$lightBrown: #F9F6F1;
+$black: #000;
+$red: #D84033;
+$gray: #CBCFD4;
+
+@mixin flex($jc, $ai) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+body {
+    font-family: $mons;
+    color: $black;
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
